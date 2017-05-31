@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1= title
+    #addAlbum
+        fieldset
+            input#inputAlbumName(type="text", placeholder="Album Name", name="albumName")
+            br
+            input#inputArtist(type="text", placeholder="Artist", name="artist")
+            br
+            input#inputYear(type="text", placeholder="Year", name="year")
+            br
+            input#inputGenre(type="text", placeholder="Genre", name="genre")
+            br
+        button#btnSubmit Add
+        button#btnHome Cancel
+        script(src='/javascripts/newAlbumEventHandler.js')
